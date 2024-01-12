@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("ЗАДАЧА 1");
         //С помощью условного оператора напишите программу, которая выводит в консоль:
-        // сообщение о том, что человеку 18 или больше лет;
-        // сообщение, что возраст совершеннолетия еще не наступил и нужно немного подождать.
+        //сообщение о том, что человеку 18 или больше лет;
+        //сообщение, что возраст совершеннолетия еще не наступил и нужно немного подождать.
         //При выполнении каждого условия программа должна выводить в консоль сообщение в формате:
-        // «Если возраст человека равен …, то (вывести в зависимости от результата) он совершеннолетний /
-        // он не достиг совершеннолетия, нужно немного подождать».
+        //«Если возраст человека равен …, то (вывести в зависимости от результата) он совершеннолетний /
+        //он не достиг совершеннолетия, нужно немного подождать».
         int age = 17;
        // age ++;
         if (age >= 18) {
@@ -23,7 +23,7 @@ public class Main {
         //нужно надеть шапку / можно идти без шапки».
         int temperature = 6;
         --temperature;
-        if (temperature <=5){
+        if (temperature <= 5){
             System.out.println("На улице " + temperature+ " градусов, поэтому можно идти без шапки.");
         }else {
             System.out.println("На улице " + temperature+ " градусов, поэтому нужно надеит шапку.");
@@ -108,14 +108,27 @@ public class Main {
         //С помощью условного оператора и конструкции else напишите программу, которая вычисляет, какое из трех чисел
         //бо́льшее, и выводит результат в консоль.
         int one = 89;
-        int two = 156;
+        int two = 345156;
         int three = 98847;
 
-        if (one > two && one > three ) {
+    //    if (one > two && one > three ) {
+    //         System.out.println("Число " + one + " наибольшее число.");
+    //    }else if (two > one && two > three ){
+    //        System.out.println("Число " + two + " наибольшее число.");
+    //    }else  if (three > one && three > two){
+    //        System.out.println("Число " + three + " наибольшее число.");
+    //    }
+    // решение задачи с применение типа boolean
+        boolean maxNumber1 = one > two && one > three;
+        boolean maxNumer2 = two > one && two > three;
+        boolean maxNumber3 = three > one && three > two;
+        if (maxNumber1) {
             System.out.println("Число " + one + " наибольшее число.");
-        }else if (two > one && two > three ){
+        }
+        if (maxNumer2){
             System.out.println("Число " + two + " наибольшее число.");
-        }else  if (three > one && three > two){
+        }
+        if (maxNumber3){
             System.out.println("Число " + three + " наибольшее число.");
         }
 
