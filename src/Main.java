@@ -118,7 +118,7 @@ public class Main {
     //    }else  if (three > one && three > two){
     //        System.out.println("Число " + three + " наибольшее число.");
     //    }
-    // решение задачи с применение типа boolean
+    // решение задачи с применение типа boolean новое
         boolean maxNumber1 = one > two && one > three;
         boolean maxNumer2 = two > one && two > three;
         boolean maxNumber3 = three > one && three > two;
